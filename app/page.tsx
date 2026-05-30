@@ -60,6 +60,7 @@ export default function Home() {
       <div className="grid grid-cols-3 gap-6">
       {filteredArtworks.map((artwork) => (
         <ArtworkCard
+          id={artwork.id}
           key={artwork.id}
           title={artwork.title}
           artist={artwork.artist}

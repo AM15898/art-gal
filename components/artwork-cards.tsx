@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from "next/link";
 
 type ArtworkCardProps = {
   title: string;
@@ -36,7 +37,7 @@ export default function ArtworkCard({
       <p className="text-zinc-500 text-xs mt-1">
         {country} · {year}
       </p>
-      
+
     </div>
   );
 }
