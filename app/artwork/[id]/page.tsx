@@ -1,5 +1,6 @@
 import { artworks } from "@/data/artworks";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 export default async function ArtworkPage({
   params,
@@ -13,8 +14,8 @@ export default async function ArtworkPage({
   );
 
   if (!artwork) {
-    return <div>Artwork not found</div>;
-  }
+    notFound();
+ }
 
   return (
     <main className="min-h-screen bg-black text-white p-8">
