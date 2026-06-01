@@ -18,27 +18,162 @@ export default async function ArtworkPage({
  }
 
   return (
-    <main className="min-h-screen bg-black text-white p-8">
-      <div className="max-w-4xl mx-auto">
+  <main className="min-h-screen bg-black text-white px-6 py-12">
+    <div className="max-w-5xl mx-auto">
 
-        <div className="relative aspect-[4/3] mb-8">
-          <Image
-            src={artwork.image}
-            alt={artwork.title}
-            fill
-            className="object-contain"
-          />
-        </div>
+      {/* Artwork Image */}
+      <div className="relative aspect-[4/3] mb-10">
+        <Image
+          src={artwork.image}
+          alt={artwork.title}
+          fill
+          className="object-contain"
+        />
+      </div>
 
-        <h1 className="text-4xl font-bold">
-          {artwork.title}
-        </h1>
+      {/* Title */}
+      <h1 className="text-5xl font-bold mb-2">
+        {artwork.title}
+      </h1>
 
-        <p className="text-zinc-400 mt-2">
-          {artwork.artist}
-        </p>
+      {/* Artist + Year */}
+      <p className="text-xl text-zinc-400 mb-8">
+        {artwork.artist}
+        {artwork.year && ` · ${artwork.year}`}
+      </p>
+
+      {/* Metadata */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 text-sm">
+
+        {artwork.country && (
+          <div>
+            <span className="text-zinc-500">
+              Country:
+            </span>{" "}
+            {artwork.country}
+          </div>
+        )}
+
+        {artwork.movement && (
+          <div>
+            <span className="text-zinc-500">
+              Movement:
+            </span>{" "}
+            {artwork.movement}
+          </div>
+        )}
+
+        {artwork.medium && (
+          <div>
+            <span className="text-zinc-500">
+              Medium:
+            </span>{" "}
+            {artwork.medium}
+          </div>
+        )}
+
+        {artwork.category && (
+          <div>
+            <span className="text-zinc-500">
+              Category:
+            </span>{" "}
+            {artwork.category}
+          </div>
+        )}
 
       </div>
-    </main>
+
+      {/* Tags */}
+      {artwork.tags.length > 0 && (
+        <div className="mb-10 flex flex-wrap gap-2">
+          {artwork.tags.map((tag) => (
+            <span
+              key={tag}
+              className="bg-zinc-800 px-3 py-1 rounded-full text-sm"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+
+      {/* Description */}
+      {artwork.description && (
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold mb-3">
+            Description
+          </h2>
+
+          <p className="text-zinc-300 leading-relaxed">
+            {artwork.description}
+          </p>
+        </section>
+      )}
+
+      {/* Why I Like It */}
+      {artwork.why_i_like_it && (
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold mb-3">
+            Why I Like It
+          </h2>
+
+          <p className="text-zinc-300 leading-relaxed">
+            {artwork.why_i_like_it}
+          </p>
+        </section>
+      )}
+
+      {/* Personal Notes */}
+      {artwork.personal_note && (
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold mb-3">
+            Personal Notes
+          </h2>
+
+          <p className="text-zinc-300 leading-relaxed">
+            {artwork.personal_note}
+          </p>
+        </section>
+      )}
+
+      {/* Museum */}
+      {(artwork.museum || artwork.museum_location) && (
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold mb-3">
+            Museum
+          </h2>
+
+          {artwork.museum && (
+            <p>{artwork.museum}</p>
+          )}
+
+          {artwork.museum_location && (
+            <p className="text-zinc-400">
+              {artwork.museum_location}
+            </p>
+          )}
+        </section>
+      )}
+
+      {/* Source */}
+      {artwork.source_url && (
+        <section>
+          <h2 className="text-2xl font-semibold mb-3">
+            Source
+          </h2>
+
+          <a
+            href={artwork.source_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:underline"
+          >
+            Learn More
+          </a>
+        </section>
+      )}
+
+    </div>
+  </main>
   );
 }
