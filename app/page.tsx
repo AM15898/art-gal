@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import ArtworkCard from "../components/artwork-cards";
 import { artworks } from "@/data/artworks";
 import { useState } from "react";
@@ -60,8 +59,8 @@ export default function Home() {
       <div className="grid grid-cols-3 gap-6">
       {filteredArtworks.map((artwork) => (
         <ArtworkCard
-          id={artwork.id}
-          key={artwork.id}
+          slug={artwork.slug}
+          key={artwork.slug}
           title={artwork.title}
           artist={artwork.artist}
           image={artwork.image}

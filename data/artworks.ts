@@ -1,6 +1,8 @@
-export const artworks = [
+import { Artwork } from "@/types/artwork";
+
+export const artworks: Artwork[] = [
   {
-    id: 1,
+    slug: "the-kiss-klimt",
     title: "The Kiss",
     artist: "Gustav Klimt",
     year: 1908,
@@ -10,11 +12,11 @@ export const artworks = [
     movement: "Art Nouveau",
     image: "/artworks/kiss-klimt.jpg",
     tags: ["love", "gold"],
-    personal_note: "Beautiful use of gold."
+    personal_note: "Beautiful use of gold.",
   },
 
   {
-    id: 2,
+    slug: "starry-night-over-the-rhone",
     title: "The Starry Night Over the Rhône",
     artist: "Vincent van Gogh",
     year: 1888,
@@ -24,11 +26,11 @@ export const artworks = [
     movement: "Post-Impressionism",
     image: "/artworks/starrynightoverrhone-vangogh.jpg",
     tags: ["night", "water"],
-    personal_note: "One of my favorite night paintings."
+    personal_note: "One of my favorite night paintings.",
   },
 
   {
-    id: 3,
+    slug: "the-scream",
     title: "The Scream",
     artist: "Edvard Munch",
     year: 1893,
@@ -38,12 +40,12 @@ export const artworks = [
     movement: "Expressionism",
     image: "/artworks/thescream-munch.jpeg",
     tags: ["anxiety", "emotion"],
-    personal_note: "Raw emotional intensity."
+    personal_note: "Raw emotional intensity.",
   },
 
   {
-    id: 4,
-    title: "The Great Wave",
+    slug: "great-wave-off-kanagawa",
+    title: "The Great Wave off Kanagawa",
     artist: "Hokusai",
     year: 1831,
     country: "Japan",
@@ -52,6 +54,6 @@ export const artworks = [
     movement: "Ukiyo-e",
     image: "/artworks/thewave-hokusai.jpeg",
     tags: ["ocean", "japan"],
-    personal_note: "The most iconic print ever made."
+    personal_note: "The most iconic print ever made.",
   },
 ];

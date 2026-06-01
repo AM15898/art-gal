@@ -5,12 +5,12 @@ import { notFound } from "next/navigation";
 export default async function ArtworkPage({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: Promise<{ slug: string }>;
 }) {
-  const { id } = await params;
+  const { slug } = await params;
 
   const artwork = artworks.find(
-    (a) => a.id === Number(id)
+    (a) => a.slug === slug
   );
 
   if (!artwork) {
