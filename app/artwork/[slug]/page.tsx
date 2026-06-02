@@ -1,6 +1,10 @@
 import { artworks } from "@/data/artworks";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { getArtworkBySlug } from "@/src/lib/artworks";
+import BackButton from "@/components/back-button";
+
+<BackButton />
 
 export default async function ArtworkPage({
   params,
@@ -9,9 +13,7 @@ export default async function ArtworkPage({
 }) {
   const { slug } = await params;
 
-  const artwork = artworks.find(
-    (a) => a.slug === slug
-  );
+  const artwork = getArtworkBySlug(slug);
 
   if (!artwork) {
     notFound();
