@@ -4,8 +4,6 @@ import { notFound } from "next/navigation";
 import { getArtworkBySlug } from "@/src/lib/artworks";
 import BackButton from "@/components/back-button";
 
-<BackButton />
-
 export default async function ArtworkPage({
   params,
 }: {
@@ -20,7 +18,9 @@ export default async function ArtworkPage({
  }
 
   return (
+    
   <main className="min-h-screen bg-black text-white px-6 py-12">
+    <BackButton />
     <div className="max-w-5xl mx-auto">
 
       {/* Artwork Image */}
