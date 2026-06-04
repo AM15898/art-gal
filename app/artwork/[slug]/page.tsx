@@ -1,8 +1,12 @@
 import { artworks } from "@/data/artworks";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { getArtworkBySlug } from "@/src/lib/artworks";
-import BackButton from "@/components/back-button";
+import {
+  getArtworkBySlug,
+  getRelatedArtworks,
+} from "@/src/lib/artworks";
+
+import ArtworkCard from "@/components/artwork-cards";import BackButton from "@/components/back-button";
 
 export default async function ArtworkPage({
   params,
@@ -12,6 +16,8 @@ export default async function ArtworkPage({
   const { slug } = await params;
 
   const artwork = getArtworkBySlug(slug);
+
+  const relatedArtworks = getRelatedArtworks(slug);
 
   if (!artwork) {
     notFound();
@@ -172,6 +178,29 @@ export default async function ArtworkPage({
           >
             Learn More
           </a>
+        </section>
+      )}
+
+      {/* Related Artworks */}
+      {relatedArtworks.length > 0 && (
+        <section className="mt-16">
+          <h2 className="text-2xl font-semibold mb-6">
+            Related Artworks
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {relatedArtworks.map((related) => (
+              <ArtworkCard
+                key={related.slug}
+                slug={related.slug}
+                title={related.title}
+                artist={related.artist}
+                image={related.image}
+                year={related.year}
+                country={related.country}
+              />
+            ))}
+          </div>
         </section>
       )}
 
