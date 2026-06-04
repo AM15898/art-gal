@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import ArtworkCard from "../components/artwork-cards";
-import { artworks } from "@/data/artworks";
+import { getAllArtworks } from "@/src/lib/artwork-service";
 import { useState } from "react";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       );
 
   return (
+    
     <main className="min-h-screen bg-black text-white p-8">
       <h1 className="text-5xl font-bold mb-8">
         Angel's Gallery

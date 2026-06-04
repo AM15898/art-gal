@@ -1,7 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { Artwork } from "@/types/artwork";
+import {
+  getAllArtworks,
+  getArtworkBySlug,
+} from "@/src/lib/artwork-service";
 
 type ArtworkCardProps = {
   artwork: Artwork;
