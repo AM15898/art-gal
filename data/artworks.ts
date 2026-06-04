@@ -153,7 +153,7 @@ export const artworks: Artwork[] = [
     title: "Carrying Love Across",
     artist: "Unknown",
     category: "Contemporary Painting",
-    image: "/artworks/carryingloveacross.webp",
+    image: "/artworks/carryingloveacross.jpg",
     tags: [
         "love",
         "devotion",
@@ -188,7 +188,7 @@ export const artworks: Artwork[] = [
     title: "Muslim Lady",
     artist: "Renaldi",
     category: "Portrait",
-    image: "/artworks/muslimlady-renaldi.webp",
+    image: "/artworks/muslimlady-renaldi.jpg",
     tags: [
         "portrait",
         "woman",
@@ -205,7 +205,7 @@ export const artworks: Artwork[] = [
     title: "Window",
     artist: "Diango Hernandez",
     category: "Contemporary Art",
-    image: "/artworks/window-diangohernandez.webp",
+    image: "/artworks/window-diangohernandez.jpg",
     tags: [
         "window",
         "memory",
