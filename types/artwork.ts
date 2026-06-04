@@ -27,4 +27,7 @@ export type Artwork = {
   source_url?: string;
 
   related_artworks?: string[];
+
+  date_added?: string;
+  mood?: string[];
 };
