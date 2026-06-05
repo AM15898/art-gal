@@ -21,7 +21,10 @@ export default async function TagPage({
   const { tag } = await params;
 
   const artworks = await getArtworksByTag(tag);
-
+  
+  console.log(
+    artworks.map((artwork) => artwork.slug)
+ );
   if (artworks.length === 0) {
     notFound();
   }

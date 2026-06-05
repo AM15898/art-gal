@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 
-import { artworks as legacyArtworks } from "@/data/artworks";
 import type { Artwork } from "@/types/artwork";
 
 function getJsonArtworks(): Artwork[] {
@@ -29,10 +28,7 @@ function getJsonArtworks(): Artwork[] {
 }
 
 export async function getAllArtworks(): Promise<Artwork[]> {
-  return [
-    ...legacyArtworks,
-    ...getJsonArtworks(),
-  ];
+  return getJsonArtworks();
 }
 
 export async function getArtworkBySlug(

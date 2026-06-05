@@ -4,7 +4,7 @@ export async function getAllTags(): Promise<string[]> {
   const artworks = await getAllArtworks();
 
   const tags = new Set<string>();
-
+  
   artworks.forEach((artwork) => {
     artwork.tags?.forEach((tag) => {
       tags.add(tag.toLowerCase());
@@ -16,6 +16,10 @@ export async function getAllTags(): Promise<string[]> {
 
 export async function getArtworksByTag(tag: string) {
   const artworks = await getAllArtworks();
+  console.log(
+    "ALL ARTWORKS:",
+    artworks.map((a) => a.slug)
+  );
 
   return artworks.filter((artwork) =>
     artwork.tags?.some(
