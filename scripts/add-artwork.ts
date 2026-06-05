@@ -53,28 +53,51 @@ async function main() {
     return;
     }
 
-  const slug = slugify(
-    `${response.title}-${response.artist}`
-  );
+  const filenameWithoutExtension = response.image.replace(/\.[^/.]+$/, "");
+    
+  const slug = slugify(filenameWithoutExtension);
 
   const artwork = {
     slug,
+
     title: response.title,
     artist: response.artist,
 
-    image: `/artworks/${response.image}`,
+    year: undefined,
 
     country: response.country,
 
+    category: "",
+
+    medium: "",
+    movement: "",
+
+    image: `/artworks/${response.image}`,
+
     tags: response.tags
-      .split(",")
-      .map((tag: string) => tag.trim())
-      .filter(Boolean),
+        .split(",")
+        .map((tag: string) => tag.trim())
+        .filter(Boolean),
 
     description: "",
+
     personal_note: "",
+
     why_i_like_it: "",
-  };
+
+    museum: "",
+    museum_location: "",
+
+    source_url: "",
+
+    related_artworks: [],
+
+    date_added: new Date()
+        .toISOString()
+        .split("T")[0],
+
+    mood: [],
+ };
 
   const outputDir = path.join(
     process.cwd(),
