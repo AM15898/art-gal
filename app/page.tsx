@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import ArtworkCard from "../components/artwork-cards";
-import { getAllArtworks } from "@/src/lib/artwork-service";
+import type { Artwork } from "@/types/artwork";
 import { useState } from "react";
+import { artworks } from "@/data/artworks";
 
 export default function Home() {
 
