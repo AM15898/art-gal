@@ -3,6 +3,7 @@ import {
   getAllTags,
   getArtworksByTag,
 } from "@/src/lib/tag-service";
+import ArtworkCard from "@/components/ArtworkCard";
 
 export async function generateStaticParams() {
   const tags = await getAllTags();
@@ -29,7 +30,14 @@ export default async function TagPage({
     <main>
       <h1>{tag}</h1>
 
-      <p>{artworks.length} artworks</p>
+      <div className="grid gap-6 md:grid-cols-3">
+        {artworks.map((artwork) => (
+            <ArtworkCard
+            key={artwork.slug}
+            artwork={artwork}
+            />
+        ))}
+        </div>
     </main>
   );
 }
