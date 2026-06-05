@@ -1,0 +1,16 @@
+{
+  "slug": "starry-night-over-the-rhone",
+  "title": "The Starry Night Over the Rhône",
+  "artist": "Vincent van Gogh",
+  "year": 1888,
+  "country": "France",
+  "category": "Painting",
+  "medium": "Oil",
+  "movement": "Post-Impressionism",
+  "image": "/artworks/starrynightoverrhone-vangogh.jpg",
+  "tags": [
+    "night",
+    "water"
+  ],
+  "personal_note": "One of my favorite night paintings."
+}

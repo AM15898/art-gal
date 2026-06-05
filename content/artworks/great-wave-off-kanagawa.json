@@ -1,0 +1,16 @@
+{
+  "slug": "great-wave-off-kanagawa",
+  "title": "The Great Wave off Kanagawa",
+  "artist": "Hokusai",
+  "year": 1831,
+  "country": "Japan",
+  "category": "Printmaking",
+  "medium": "Woodblock Print",
+  "movement": "Ukiyo-e",
+  "image": "/artworks/thewave-hokusai.jpeg",
+  "tags": [
+    "ocean",
+    "japan"
+  ],
+  "personal_note": "The most iconic print ever made."
+}

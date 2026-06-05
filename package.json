@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "generate-artworks": "tsx scripts/generate-artworks.ts",
-    "add-artwork": "tsx scripts/add-artwork.ts"
+    "add-artwork": "tsx scripts/add-artwork.ts",
+    "migrate-artworks": "tsx scripts/migrate-artworks.ts"
   },
   "dependencies": {
     "next": "16.2.6",

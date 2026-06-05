@@ -1,0 +1,22 @@
+{
+  "slug": "the-kiss-klimt",
+  "title": "The Kiss",
+  "artist": "Gustav Klimt",
+  "year": 1908,
+  "country": "Austria",
+  "category": "Painting",
+  "medium": "Oil and gold leaf",
+  "movement": "Art Nouveau",
+  "image": "/artworks/kiss-klimt.jpg",
+  "tags": [
+    "love",
+    "gold"
+  ],
+  "personal_note": "Beautiful use of gold.",
+  "description": "One of Gustav Klimt's most celebrated works, depicting an embracing couple wrapped in elaborate golden robes. The painting combines intimacy with decorative symbolism and is considered a masterpiece of the Vienna Secession movement.",
+  "why_i_like_it": "I love how the gold leaf creates a dreamlike atmosphere while still keeping the human emotion at the center of the composition.",
+  "museum": "Belvedere Museum",
+  "museum_location": "Vienna, Austria",
+  "source_url": "https://en.wikipedia.org/wiki/The_Kiss",
+  "related_artworks": []
+}
