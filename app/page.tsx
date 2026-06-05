@@ -4,7 +4,10 @@ import Image from "next/image";
 import ArtworkCard from "../components/artwork-cards";
 import type { Artwork } from "@/types/artwork";
 import { useState } from "react";
-import { artworks } from "@/data/artworks";
+import fs from "fs";
+import path from "path";
+import { artworks as legacyArtworks } from "@/data/artworks";
+import { artworks} from "@/data/artworks";
 
 export default function Home() {
 

@@ -1,3 +1,7 @@
+import fs from "fs";
+import path from "path";
+import { artworks as legacyArtworks } from "@/data/artworks";
+import type { Artwork } from "@/types/artwork";
 import { artworks } from "@/data/artworks";
 
 export function getAllArtworks() {
