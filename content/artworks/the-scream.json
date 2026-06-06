@@ -3,7 +3,7 @@
   "title": "The Scream",
   "artist": "Edvard Munch",
   "year": 1893,
-  "country": "Norway",
+  "countrySlug": "Norway",
   "category": "Painting",
   "medium": "Oil, tempera and pastel",
   "movement": "Expressionism",

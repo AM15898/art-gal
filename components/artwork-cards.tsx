@@ -6,7 +6,7 @@ type ArtworkCardProps = {
   artist: string;
   image: string;
   year?: number;
-  country?: string;
+  countrySlug?: string;
   slug: string;
 };
 
@@ -16,7 +16,7 @@ export default function ArtworkCard({
   artist,
   image,
   year,
-  country
+  countrySlug
 }: ArtworkCardProps) {
   return (
     <Link href={`/artwork/${slug}`}>
@@ -38,7 +38,7 @@ export default function ArtworkCard({
         </p>
 
         <p className="text-zinc-500 text-xs mt-1">
-            {country ?? "Unknown"} · {year ?? "Date unknown"}
+            {countrySlug ?? "Unknown"} · {year ?? "Date unknown"}
         </p>
 
         </div>

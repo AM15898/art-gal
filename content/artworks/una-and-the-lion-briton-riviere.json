@@ -3,7 +3,7 @@
   "title": "Una and the Lion",
   "artist": "Briton Riviere",
   "image": "/artworks/Briton_Rivière_-_Una_and_the_Lion.jpg",
-  "country": "Britain",
+  "countrySlug": "Britain",
   "tags": [
     "lion",
     "animal",

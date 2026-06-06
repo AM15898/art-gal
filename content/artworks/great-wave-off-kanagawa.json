@@ -3,7 +3,7 @@
   "title": "The Great Wave off Kanagawa",
   "artist": "Hokusai",
   "year": 1831,
-  "country": "Japan",
+  "countrySlug": "Japan",
   "category": "Printmaking",
   "medium": "Woodblock Print",
   "movement": "Ukiyo-e",

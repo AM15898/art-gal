@@ -6,7 +6,6 @@ import type { Artwork } from "@/types/artwork";
 import { useState } from "react";
 import fs from "fs";
 import path from "path";
-import { artworks as legacyArtworks } from "@/data/artworks";
 
 type Props = {
   artworks: Artwork[];
@@ -76,7 +75,7 @@ export default function HomePageClient({
           artist={artwork.artist}
           image={artwork.image}
           year={artwork.year}
-          country={artwork.country}
+          countrySlug={artwork.countrySlug}
         />
       ))}
     </div>

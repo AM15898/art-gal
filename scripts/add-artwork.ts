@@ -29,8 +29,8 @@ async function main() {
     },
     {
       type: "text",
-      name: "country",
-      message: "Country:",
+      name: "countrySlug",
+      message: "countrySlug:",
     },
     {
       type: "text",
@@ -65,7 +65,7 @@ async function main() {
 
     year: undefined,
 
-    country: response.country,
+    countrySlug: response.countrySlug,
 
     category: "",
 

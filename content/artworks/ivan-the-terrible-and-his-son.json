@@ -3,7 +3,7 @@
   "title": "Ivan the Terrible and His Son Ivan",
   "artist": "Ilya Repin",
   "year": 1885,
-  "country": "Russia",
+  "countrySlug": "Russia",
   "category": "Painting",
   "image": "/artworks/Iván_el_Terrible_y_su_hijo,_por_Iliá_Repin.jpg",
   "tags": [

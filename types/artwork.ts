@@ -5,7 +5,7 @@ export type Artwork = {
   artist: string;
   year?: number;
 
-  country?: string;
+  countrySlug?: string;
   category?: string;
   medium?: string;
   movement?: string;

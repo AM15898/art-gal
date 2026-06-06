@@ -3,7 +3,7 @@
   "title": "The Starry Night Over the Rhône",
   "artist": "Vincent van Gogh",
   "year": 1888,
-  "country": "France",
+  "countrySlug": "France",
   "category": "Painting",
   "medium": "Oil",
   "movement": "Post-Impressionism",

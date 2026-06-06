@@ -47,12 +47,12 @@ export default async function ArtworkPage({
       {/* Metadata */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 text-sm">
 
-        {artwork.country && (
+        {artwork.countrySlug && (
           <div>
             <span className="text-zinc-500">
-              Country:
+              countrySlugSlug:
             </span>{" "}
-            {artwork.country}
+            {artwork.countrySlug}
           </div>
         )}
 
