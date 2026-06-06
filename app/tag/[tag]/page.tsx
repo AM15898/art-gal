@@ -4,6 +4,7 @@ import {
   getArtworksByTag,
 } from "@/src/lib/tag-service";
 import ArtworkCard from "@/components/ArtworkCard";
+import type { Metadata } from "next";
 
 export async function generateStaticParams() {
   const tags = await getAllTags();
@@ -11,6 +12,19 @@ export async function generateStaticParams() {
   return tags.map((tag) => ({
     tag,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ tag: string }>;
+}): Promise<Metadata> {
+  const { tag } = await params;
+
+  return {
+    title: `#${tag}`,
+    description: `Browse artworks tagged with ${tag}.`,
+  };
 }
 
 export default async function TagPage({
@@ -31,8 +45,9 @@ export default async function TagPage({
 
   return (
     <main>
-      <h1>{tag}</h1>
-
+      <h1 className="text-4xl font-bold mb-2">
+      #{tag}
+      </h1>
       <div className="grid gap-6 md:grid-cols-3">
         {artworks.map((artwork) => (
             <ArtworkCard
