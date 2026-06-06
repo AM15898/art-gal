@@ -2,6 +2,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getArtworkBySlug } from "@/src/lib/artwork-service";
 import BackButton from "@/components/back-button";
+import Link from "next/link";
 
 export default async function ArtworkPage({
   params,
@@ -87,14 +88,17 @@ export default async function ArtworkPage({
       {/* Tags */}
       {artwork.tags.length > 0 && (
         <div className="mb-10 flex flex-wrap gap-2">
-          {artwork.tags.map((tag) => (
-            <span
-              key={tag}
-              className="bg-zinc-800 px-3 py-1 rounded-full text-sm"
-            >
-              {tag}
-            </span>
-          ))}
+          <div className="flex flex-wrap gap-2">
+            {artwork.tags?.map((tag) => (
+              <Link
+                key={tag}
+                href={`/tag/${tag.toLowerCase()}`}
+                className="rounded-md border px-2 py-1 text-sm hover:bg-gray-100"
+              >
+                #{tag}
+              </Link>
+            ))}
+          </div>
         </div>
       )}
 
