@@ -1,5 +1,19 @@
 from schemas.genome import ArtworkGenome
 
+from schemas.genome import ArtworkGenome
+from utils.image_metrics import (
+    compute_brightness,
+    compute_colorfulness,
+)
+
+image_path = "input/thewave-hokusai.jpeg"
+
+brightness = compute_brightness(image_path)
+
+colorfulness = compute_colorfulness(image_path)
+
+print("Brightness:", brightness)
+print("Colorfulness:", colorfulness)
 
 genome = ArtworkGenome(
     title="The Great Wave off Kanagawa",
@@ -32,9 +46,17 @@ genome = ArtworkGenome(
     analysis="A dramatic depiction of the ocean.",
 
     visual_dna={
-        "brightness": 52.3,
-        "colorfulness": 71.2
-    }
+        "brightness": brightness,
+        "colorfulness": colorfulness
+    }   
 )
 
 print(genome.model_dump_json(indent=2))
+
+with open(
+    "output/thewave-hokusai.json",
+    "w"
+) as f:
+    f.write(
+        genome.model_dump_json(indent=2)
+    )

@@ -1,29 +1,28 @@
 {
-  "title": "The Great Wave",
-
+  "title": "The Great Wave off Kanagawa",
   "moods": [
     "dramatic",
-    "contemplative"
+    "powerful",
+    "energetic"
   ],
-
   "themes": [
     "nature",
-    "power",
-    "journey"
+    "human vulnerability"
   ],
-
   "subjects": [
     "wave",
     "boats",
-    "mountain", 
-    "ocean",
-    "water",
     "mount fuji"
   ],
-
   "techniques": [
     "woodblock print"
   ],
-
-  "analysis": "..."
+  "symbolism": [
+    "power of nature"
+  ],
+  "analysis": "A dramatic depiction of the ocean.",
+  "visual_dna": {
+    "brightness": 191.75501755472945,
+    "colorfulness": 31.698081713832075
+  }
 }
