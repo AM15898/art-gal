@@ -6,7 +6,15 @@ from utils.image_metrics import (
     compute_colorfulness,
 )
 
+from prompts.artwork_prompts import build_artwork_prompt
+
+
 image_path = "input/thewave-hokusai.jpeg"
+
+
+prompt = build_artwork_prompt(image_path)
+
+print(prompt)
 
 brightness = compute_brightness(image_path)
 
@@ -52,6 +60,7 @@ genome = ArtworkGenome(
 )
 
 print(genome.model_dump_json(indent=2))
+
 
 with open(
     "output/thewave-hokusai.json",
