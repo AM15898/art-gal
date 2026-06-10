@@ -8,7 +8,6 @@ class VisualDNA(BaseModel):
 
 
 class ArtworkGenome(BaseModel):
-    title: str
 
     moods: List[str]
     themes: List[str]
