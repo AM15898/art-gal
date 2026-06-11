@@ -12,5 +12,73 @@
     "ocean",
     "japan"
   ],
-  "personal_note": "The most iconic print ever made."
+  "personal_note": "The most iconic print ever made.",
+  "genome": {
+    "title": "The Great Wave off Kanagawa",
+    "moods": [
+      "dramatic",
+      "tense",
+      "dynamic",
+      "powerful",
+      "majestic",
+      "ominous",
+      "energetic",
+      "chaotic",
+      "intense",
+      "forceful"
+    ],
+    "themes": [
+      "nature's power",
+      "human struggle",
+      "transience",
+      "the sublime",
+      "contrast",
+      "nature vs. man",
+      "impermanence",
+      "survival",
+      "beauty in chaos",
+      "overwhelming forces"
+    ],
+    "subjects": [
+      "giant wave",
+      "boats",
+      "mountain",
+      "ocean",
+      "fishermen",
+      "sky",
+      "surf",
+      "water",
+      "storm",
+      "natural elements"
+    ],
+    "techniques": [
+      "woodblock printing",
+      "ukiyo-e style",
+      "linear perspective",
+      "bold outlines",
+      "vivid colors",
+      "dynamic composition",
+      "contrast of scale",
+      "use of Prussian blue",
+      "delineation",
+      "layering"
+    ],
+    "symbolism": [
+      "wave as power",
+      "boats as human fragility",
+      "Mount Fuji as permanence",
+      "water as life and threat",
+      "contrast as balance",
+      "nature as indifferent force",
+      "circular waves as infinity",
+      "sky as calmness",
+      "distance as security",
+      "rhythm in chaos"
+    ],
+    "analysis": "The artwork illustrates the immense power of nature against human endeavor. The towering wave is about to crash over the diminutive boats, highlighting the tension and fragility of human existence. Mount Fuji in the background symbolizes stability amidst the chaos. The interplay of the elements creates a scene of dynamic movement, using bold outlines and vivid colors characteristic of the ukiyo-e style.",
+    "visual_dna": {
+      "brightness": 191.75501755472945,
+      "colorfulness": 31.698081713832075
+    }
+  }
 }
