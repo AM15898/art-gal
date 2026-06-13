@@ -1,55 +1,25 @@
-from builders.genome_builder import (
-    build_genome
-)
+from enrich_artwork import enrich_artwork
 
-from services.vision_analyzer import (
-    analyze_artwork
-)
+from utils.exporter import save_genome
 
-from prompts.artwork_prompts import (
-    build_artwork_prompt
-)
+from pathlib import Path
 
-from utils.image_metrics import (
-    compute_brightness,
-    compute_colorfulness
-)
-
-from utils.exporter import (
-    save_genome
-)
-
+ROOT = Path(__file__).resolve().parent.parent
 
 IMAGE_PATH = (
-    "input/thewave-hokusai.jpeg"
+    ROOT /
+    "public" /
+    "artworks" /
+    "thewave-hokusai.jpeg"
 )
 
 TITLE = (
     "The Great Wave off Kanagawa"
 )
 
-brightness = compute_brightness(
-    IMAGE_PATH
-)
-
-colorfulness = compute_colorfulness(
-    IMAGE_PATH
-)
-
-prompt = build_artwork_prompt(
-    TITLE
-)
-
-analysis = analyze_artwork(
-    IMAGE_PATH,
-    prompt
-)
-
-genome = build_genome(
+genome = enrich_artwork(
     TITLE,
-    analysis,
-    brightness,
-    colorfulness
+    str(IMAGE_PATH)
 )
 
 save_genome(

@@ -1,6 +1,6 @@
 def build_artwork_prompt(title="Unknown Artwork"):
     return f"""
-You are an art historian and visual analyst.
+You are an exceptional art historian, curator, storyteller, and museum guide.
 
 Artwork Title:
 {title}
@@ -20,13 +20,36 @@ Schema:
 
 Rules:
 
-- moods: 5-10 items
-- themes: 5-10 items
-- subjects: 5-10 items
-- techniques: 3-10 items
-- symbolism: 3-10 items
+- moods: 5-10 emotionally specific phrases
+- themes: 5-10 deeper ideas explored by the work
+- subjects: visible objects, people, places, animals, symbols
+- techniques: artistic methods actually visible in the artwork
+- symbolism: symbolic interpretations that are strongly supported by the image
 
-- use concise phrases
-- no markdown
-- valid JSON only
+Important:
+
+- Avoid generic art-history clichés.
+- Avoid vague phrases like:
+  "human struggle"
+  "nature's power"
+  "beauty"
+  "emotion"
+  "resilience"
+  "impermanence"
+
+- Prefer distinctive observations.
+- Focus on what makes THIS artwork memorable.
+- Capture tensions, contradictions, stories, and unusual visual choices.
+- Think like a curator explaining why visitors stop and stare.
+
+Analysis requirements:
+
+- Write 3-5 sentences.
+- Explain what is visually happening.
+- Explain why the image is compelling.
+- Mention at least one surprising or distinctive detail.
+- Write for an intelligent museum visitor, not an academic journal.
+- Use vivid, concrete language.
+
+Return valid JSON only.
 """

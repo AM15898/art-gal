@@ -1,0 +1,58 @@
+{
+  "moods": [
+    "dramatic",
+    "tense",
+    "dynamic",
+    "powerful",
+    "overwhelming",
+    "majestic",
+    "energetic",
+    "ominous",
+    "awe-inspiring"
+  ],
+  "themes": [
+    "nature's might",
+    "human struggle",
+    "transience",
+    "impermanence",
+    "sublime beauty",
+    "conflict",
+    "survival",
+    "destiny",
+    "traditional culture"
+  ],
+  "subjects": [
+    "giant wave",
+    "Mount Fuji",
+    "fishing boats",
+    "ocean",
+    "fishermen",
+    "sky",
+    "foam",
+    "coastline",
+    "Japanese landscape"
+  ],
+  "techniques": [
+    "ukiyo-e woodblock print",
+    "Prussian blue ink",
+    "linear perspective",
+    "bold outlines",
+    "fine detail",
+    "gradation",
+    "dynamic composition"
+  ],
+  "symbolism": [
+    "waves as nature's power",
+    "Mount Fuji as constancy",
+    "boats as human endeavor",
+    "foam as transience",
+    "contrast of chaos and calm",
+    "ocean as destiny",
+    "Japanese identity"
+  ],
+  "analysis": "The artwork 'The Great Wave off Kanagawa' by Hokusai vividly captures the tension between nature and human endeavor through its depiction of a towering wave confronting small fishing boats. The use of Prussian blue ink and bold outlining highlights the dramatic and dynamic movement of the wave, while Mount Fuji in the background symbolizes permanence amidst the impermanence of the sea. This iconic ukiyo-e print expertly balances chaos and symmetry, embodying both the beauty and the peril of the natural world.",
+  "visual_dna": {
+    "brightness": 191.75501755472945,
+    "colorfulness": 31.698081713832075
+  }
+}

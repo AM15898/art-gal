@@ -99,32 +99,33 @@ async function main() {
     mood: [],
  };
 
-  const outputDir = path.join(
+  const artworkDir = path.join(
     process.cwd(),
     "content",
-    "artworks"
-  );
+    "artworks",
+    slug
+    );
 
-  fs.mkdirSync(outputDir, {
-    recursive: true,
-  });
+    const outputFile = path.join(
+    artworkDir,
+    "metadata.json"
+    );
 
-  const outputFile = path.join(
-    outputDir,
-    `${slug}.json`
-  );
-
-  if (fs.existsSync(outputFile)) {
+    if (fs.existsSync(artworkDir)) {
     console.log("❌ Artwork already exists.");
     return;
-  }
+    }
+
+    fs.mkdirSync(artworkDir, {
+    recursive: true,
+    });
 
   fs.writeFileSync(
     outputFile,
     JSON.stringify(artwork, null, 2)
   );
 
-  console.log(`✅ Created ${slug}.json`);
+   console.log(`✅ Created ${slug}/metadata.json`);
 }
 
 main();
