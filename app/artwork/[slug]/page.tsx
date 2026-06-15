@@ -45,10 +45,44 @@ export default async function ArtworkPage({
         {artwork.year && ` · ${artwork.year}`}
       </p>
 
-      {/* Color Palette */}
-      {artwork.genome?.palette && (
-        <ColorSpectrum palette={artwork.genome.palette} />
-      )}
+
+      {/* Visual DNA */}
+    {artwork.genome && (
+      <section className="mb-10">
+
+    <h2 className="text-2xl font-semibold mb-4">
+      Visual DNA
+    </h2>
+
+    <ColorSpectrum palette={artwork.genome.palette} />
+
+      <div className="mt-4 space-y-2 text-zinc-300">
+
+        <div>
+          Brightness:{" "}
+          {Math.round(
+            artwork.genome.brightness * 100
+          )}%
+        </div>
+
+        <div>
+          Contrast:{" "}
+          {Math.round(
+            artwork.genome.contrast * 100
+          )}%
+        </div>
+
+        <div>
+          Warmth:{" "}
+          {Math.round(
+            artwork.genome.warmth * 100
+          )}%
+        </div>
+
+      </div>
+
+    </section>
+  )}
       
       {/* Metadata */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 text-sm">
