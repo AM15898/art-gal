@@ -9,10 +9,7 @@ type ArtworkCardProps = {
   year?: number;
   countrySlug?: string;
   slug: string;
-  palette?: {
-    hex: string;
-    percentage: number;
-    }[];
+  palette?: string[];
 };
 
 export default function ArtworkCard({

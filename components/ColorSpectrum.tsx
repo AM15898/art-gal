@@ -1,21 +1,16 @@
-type Color = {
-  hex: string;
-  percentage: number;
-};
-
 export default function ColorSpectrum({
   palette,
 }: {
-  palette: Color[];
+  palette: string[];
 }) {
   return (
     <div className="flex h-8 w-full overflow-hidden rounded-lg">
       {palette.map((color) => (
         <div
-          key={color.hex}
+          key={color}
           style={{
-            backgroundColor: color.hex,
-            width: `${color.percentage}%`,
+            backgroundColor: color,
+            width: `${100 / palette.length}%`,
           }}
         />
       ))}

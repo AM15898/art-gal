@@ -1,10 +1,11 @@
-import type { Artwork } from "./artwork";
+import type {
+  Artwork,
+  ArtworkGenome,
+} from "./artwork";
 
 export interface ArtworkRecord {
   metadata: Artwork;
-  genome?: unknown;
-  palette?: {
-    hex: string;
-    percentage: number;
-  }[];
+  genome?: ArtworkGenome;
+
+  palette?: string[];
 }

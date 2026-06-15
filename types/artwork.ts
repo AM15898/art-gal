@@ -1,3 +1,10 @@
+export type ArtworkGenome = {
+  palette: string[];
+  brightness: number;
+  contrast: number;
+  warmth: number;
+};
+
 export type Artwork = {
   slug: string;
 
@@ -30,4 +37,6 @@ export type Artwork = {
 
   date_added?: string;
   mood?: string[];
+
+  genome?: ArtworkGenome;
 };
