@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Artwork } from "@/types/artwork";
+import ColorSpectrum from "@/components/ColorSpectrum"; 
 
 type ArtworkCardProps = {
   artwork: Artwork;
@@ -44,5 +45,7 @@ export default function ArtworkCard({
 
       </div>
     </Link>
+
+    
   );
 }

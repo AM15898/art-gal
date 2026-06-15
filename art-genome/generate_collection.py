@@ -15,6 +15,10 @@ from builders.genome_builder import (
     build_genome
 )
 
+from pathlib import Path
+
+ARTWORK_DIR = Path("../content/artworks")
+
 for filename in os.listdir("input"):
 
     if not filename.lower().endswith(

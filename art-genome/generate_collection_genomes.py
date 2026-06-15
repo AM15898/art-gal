@@ -14,7 +14,7 @@ def main():
         if p.is_dir()
     ]
 
-    for folder in folders[:1]:
+    for folder in folders:
 
         metadata_file = folder / "metadata.json"
 

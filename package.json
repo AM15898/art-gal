@@ -10,7 +10,7 @@
     "generate-artworks": "tsx scripts/generate-artworks.ts",
     "add-artwork": "tsx scripts/add-artwork.ts",
     "migrate-artworks": "tsx scripts/migrate-artworks.ts",
-    "generate-collection-genomes": "python3 art-genome/generate-collection-genomes.py"
+    "generate-collection-genomes": "python3 art-genome/generate_collection_genomes.py"
   },
   "dependencies": {
     "next": "16.2.6",

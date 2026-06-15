@@ -43,11 +43,17 @@ export async function getAllArtworks(): Promise<Artwork[]> {
 export async function getArtworkBySlug(
   slug: string
 ): Promise<Artwork | undefined> {
-  const artworks = await getAllArtworks();
 
-  return artworks.find(
-    (artwork) => artwork.slug === slug
-  );
+  const record = getArtworkRecord(slug);
+
+  if (!record) {
+    return undefined;
+  }
+
+  return {
+    ...record.metadata,
+    genome: record.genome,
+  };
 }
 
 export function getArtworkRecord(

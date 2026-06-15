@@ -46,7 +46,9 @@ export default async function ArtworkPage({
       </p>
 
       {/* Color Palette */}
-      <ColorSpectrum palette={artwork.genome.palette} />
+      {artwork.genome?.palette && (
+        <ColorSpectrum palette={artwork.genome.palette} />
+      )}
       
       {/* Metadata */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 text-sm">
