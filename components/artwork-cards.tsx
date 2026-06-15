@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from "next/link";
+import ColorSpectrum from './ColorSpectrum';
 
 type ArtworkCardProps = {
   title: string;
@@ -8,6 +9,10 @@ type ArtworkCardProps = {
   year?: number;
   countrySlug?: string;
   slug: string;
+  palette?: {
+    hex: string;
+    percentage: number;
+    }[];
 };
 
 export default function ArtworkCard({
@@ -16,7 +21,8 @@ export default function ArtworkCard({
   artist,
   image,
   year,
-  countrySlug
+  countrySlug,
+  palette
 }: ArtworkCardProps) {
   return (
     <Link href={`/artwork/${slug}`}>
@@ -40,6 +46,8 @@ export default function ArtworkCard({
         <p className="text-zinc-500 text-xs mt-1">
             {countrySlug ?? "Unknown"} · {year ?? "Date unknown"}
         </p>
+
+        {palette && <ColorSpectrum palette={palette} />}
 
         </div>
     </Link>

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getArtworkBySlug } from "@/src/lib/artwork-service";
 import BackButton from "@/components/back-button";
 import Link from "next/link";
+import ColorSpectrum from "@/components/ColorSpectrum";
 
 export default async function ArtworkPage({
   params,
@@ -44,6 +45,9 @@ export default async function ArtworkPage({
         {artwork.year && ` · ${artwork.year}`}
       </p>
 
+      {/* Color Palette */}
+      <ColorSpectrum palette={artwork.genome.palette} />
+      
       {/* Metadata */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 text-sm">
 
