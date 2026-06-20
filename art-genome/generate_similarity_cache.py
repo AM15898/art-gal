@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 
 
-ARTWORKS_DIR = Path("../content/artworks")
+ARTWORKS_DIR = Path("content/artworks")
 OUTPUT_DIR = Path("../generated")
 OUTPUT_FILE = OUTPUT_DIR / "similar-artworks.json"
 
