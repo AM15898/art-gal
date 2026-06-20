@@ -97,3 +97,15 @@ export function getArtworkRecord(
     genome,
   };
 }
+
+export async function getArtworksBySlugs(
+  slugs: string[]
+) {
+  const artworks = await getAllArtworks();
+
+  return slugs
+    .map((slug) =>
+      artworks.find((a) => a.slug === slug)
+    )
+    .filter(Boolean);
+}
