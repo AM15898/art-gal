@@ -3,7 +3,7 @@ from services.embedding_generator import (
 )
 
 result = generate_embedding(
-    "../public/artworks/thewave-hokusai.jpeg"
+    "public/artworks/thewave-hokusai.jpeg"
 )
 
 print(

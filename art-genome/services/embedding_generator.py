@@ -1,4 +1,6 @@
 from PIL import Image
+import torch
+import open_clip
 
 # Load model once when module starts
 model, _, preprocess = open_clip.create_model_and_transforms(
