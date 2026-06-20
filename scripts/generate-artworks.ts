@@ -87,7 +87,7 @@ for (const file of files) {
     slug,
     title: titleFromSlug(slug),
     artist: "",
-    year: null,
+    year: undefined,
     countrySlug: "",
     category: "Painting",
     medium: "",
