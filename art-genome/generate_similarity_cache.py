@@ -5,7 +5,7 @@ import numpy as np
 
 
 ARTWORKS_DIR = Path("content/artworks")
-OUTPUT_DIR = Path("../generated")
+OUTPUT_DIR = Path("generated")
 OUTPUT_FILE = OUTPUT_DIR / "similar-artworks.json"
 
 TOP_K = 5
