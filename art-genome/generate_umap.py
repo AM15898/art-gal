@@ -6,67 +6,80 @@ import umap
 
 ARTWORKS_DIR = Path("content/artworks")
 OUTPUT_DIR = Path("generated")
+OUTPUT_FILE = OUTPUT_DIR / "art-map.json"
 
-embeddings = []
-slugs = []
 
-for artwork_dir in ARTWORKS_DIR.iterdir():
-    if not artwork_dir.is_dir():
-        continue
+def load_embeddings():
+    embeddings = []
+    slugs = []
 
-    embedding_path = artwork_dir / "embedding.json"
+    for artwork_dir in ARTWORKS_DIR.iterdir():
+        if not artwork_dir.is_dir():
+            continue
 
-    if not embedding_path.exists():
-        continue
+        embedding_path = artwork_dir / "embedding.json"
 
-    with open(embedding_path) as f:
-        data = json.load(f)
+        if not embedding_path.exists():
+            continue
 
-    embeddings.append(data["vector"])
-    slugs.append(artwork_dir.name)
+        with open(embedding_path) as f:
+            data = json.load(f)
 
-embeddings = np.array(embeddings)
+        embeddings.append(data["vector"])
+        slugs.append(artwork_dir.name)
 
-print(
-    f"Loaded {len(slugs)} embeddings"
-)
+    return np.array(embeddings), slugs
 
-reducer = umap.UMAP(
-    n_neighbors=15,
-    min_dist=0.1,
-    random_state=42,
-)
 
-coordinates = reducer.fit_transform(
-    embeddings
-)
+def main():
+    embeddings, slugs = load_embeddings()
 
-result = []
-
-for slug, point in zip(slugs, coordinates):
-    result.append(
-        {
-            "slug": slug,
-            "x": float(point[0]),
-            "y": float(point[1]),
-        }
+    print(
+        f"Loaded {len(slugs)} embeddings"
     )
 
-OUTPUT_DIR.mkdir(
-    parents=True,
-    exist_ok=True,
-)
-
-with open(
-    OUTPUT_DIR / "art-map.json",
-    "w",
-) as f:
-    json.dump(
-        result,
-        f,
-        indent=2,
+    reducer = umap.UMAP(
+        n_neighbors=15,
+        min_dist=0.1,
+        metric="cosine",
+        random_state=42,
     )
 
-print(
-    f"Generated coordinates for {len(result)} artworks"
-)
+    coordinates = reducer.fit_transform(
+        embeddings
+    )
+
+    result = []
+
+    for slug, point in zip(slugs, coordinates):
+        result.append(
+            {
+                "slug": slug,
+                "x": round(float(point[0]), 4),
+                "y": round(float(point[1]), 4),
+            }
+        )
+
+    OUTPUT_DIR.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    with open(OUTPUT_FILE, "w") as f:
+        json.dump(
+            result,
+            f,
+            indent=2,
+        )
+
+    print(
+        f"Generated {len(result)} coordinates"
+    )
+
+    print(
+        f"Saved to {OUTPUT_FILE}"
+    )
+
+
+if __name__ == "__main__":
+    main()
