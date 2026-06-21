@@ -1,6 +1,7 @@
 numpy
 pillow
 scikit-learn
+pathlib
 torch
 open-clip-torch
 openai
