@@ -1,386 +1,617 @@
 [
   {
     "slug": "whyn-lewis",
+    "title": "Whyn Lewis",
+    "artist": "",
+    "image": "/artworks/whyn-lewis.jpg",
     "x": -0.2281,
     "y": 3.1843
   },
   {
     "slug": "starry-night-over-the-rhone",
+    "title": "The Starry Night Over the Rh\u00f4ne",
+    "artist": "Vincent van Gogh",
+    "image": "/artworks/starrynightoverrhone-vangogh.jpg",
     "x": -2.9778,
     "y": 0.3127
   },
   {
     "slug": "Adam,_Albrecht_-_Horses_at_the_PorchFXD",
+    "title": "Adam,_Albrecht_ _Horses_at_the_PorchFXD",
+    "artist": "",
+    "image": "/artworks/Adam,_Albrecht_-_Horses_at_the_PorchFXD.jpg",
     "x": 4.3387,
     "y": 3.3735
   },
   {
     "slug": "memoryII-by-mememe",
+    "title": "MemoryII By Mememe",
+    "artist": "",
+    "image": "/artworks/memoryII-by-mememe.jpg",
     "x": -0.8496,
     "y": 1.7484
   },
   {
     "slug": "carryingloveacross",
+    "title": "Carryingloveacross",
+    "artist": "",
+    "image": "/artworks/carryingloveacross.jpg",
     "x": -0.5075,
     "y": 1.1714
   },
   {
     "slug": "hiro-insoo-japanese-garden",
+    "title": "Hiro Insoo Japanese Garden",
+    "artist": "",
+    "image": "/artworks/hiro-insoo-japanese-garden.jpg",
     "x": -1.0198,
     "y": 1.117
   },
   {
     "slug": "polar-new-hannah-jensonfox",
+    "title": "Polar New Hannah Jensonfox",
+    "artist": "",
+    "image": "/artworks/polar-new-hannah-jensonfox.jpg",
     "x": -0.7774,
     "y": 2.9377
   },
   {
     "slug": "iimeme",
+    "title": "Iimeme",
+    "artist": "",
+    "image": "/artworks/iimeme.webp",
     "x": 0.0631,
     "y": 2.7304
   },
   {
     "slug": "horses-at-the-porch",
+    "title": "Horses at the Porch",
+    "artist": "Albrecht Adam",
+    "image": "/artworks/Adam,_Albrecht_-_Horses_at_the_PorchFXD.jpg",
     "x": 4.5951,
     "y": 3.4604
   },
   {
     "slug": "ignasi-cloudscape",
+    "title": "Ignasi Cloudscape",
+    "artist": "",
+    "image": "/artworks/ignasi-cloudscape.jpg",
     "x": -1.4808,
     "y": 1.5862
   },
   {
     "slug": "Iv\u00e1n_el_Terrible_y_su_hijo,_por_Ili\u00e1_Repin",
+    "title": "Iv\u00e1n_el_Terrible_y_su_hijo,_por_Ili\u00e1_Repin",
+    "artist": "",
+    "image": "/artworks/Iv\u00e1n_el_Terrible_y_su_hijo,_por_Ili\u00e1_Repin.jpg",
     "x": 4.0053,
     "y": 1.8263
   },
   {
     "slug": "briton-riviere-his-only-friend",
+    "title": "Briton Riviere His Only Friend",
+    "artist": "",
+    "image": "/artworks/briton-riviere-his-only-friend.jpg",
     "x": 3.9423,
     "y": 4.2392
   },
   {
     "slug": "Kudu-hannah-jensonfox",
+    "title": "Kudu Hannah Jensonfox",
+    "artist": "",
+    "image": "/artworks/Kudu-hannah-jensonfox.jpg",
     "x": -0.5969,
     "y": 2.7398
   },
   {
     "slug": "PArrot-paradise-hannah-jensenfox",
+    "title": "PArrot Paradise Hannah Jensenfox",
+    "artist": "",
+    "image": "/artworks/PArrot-paradise-hannah-jensenfox.jpeg",
     "x": -0.4548,
     "y": 2.1447
   },
   {
     "slug": "Landseer_Edwin-Old_Shepherds_Chief_Mourner_1837",
+    "title": "Landseer_Edwin Old_Shepherds_Chief_Mourner_1837",
+    "artist": "",
+    "image": "/artworks/Landseer_Edwin-Old_Shepherds_Chief_Mourner_1837.jpg",
     "x": 4.7929,
     "y": 3.0704
   },
   {
     "slug": "Working_in_Marble_jerard_leon_gerome",
+    "title": "Working_in_Marble_jerard_leon_gerome",
+    "artist": "",
+    "image": "/artworks/Working_in_Marble_jerard_leon_gerome.jpg",
     "x": 4.3125,
     "y": 2.2107
   },
   {
     "slug": "Edwin_Landseer_-_Attachment",
+    "title": "Edwin_Landseer_ _Attachment",
+    "artist": "",
+    "image": "/artworks/Edwin_Landseer_-_Attachment.jpg",
     "x": 3.9573,
     "y": 3.6637
   },
   {
     "slug": "attachment",
+    "title": "Attachment",
+    "artist": "Edwin Landseer",
+    "image": "/artworks/Edwin_Landseer_-_Attachment.jpg",
     "x": 4.0778,
     "y": 3.8624
   },
   {
     "slug": "montecarlomasters",
+    "title": "Montecarlomasters",
+    "artist": "",
+    "image": "/artworks/montecarlomasters.jpg",
     "x": 1.9261,
     "y": 2.6228
   },
   {
     "slug": "old-shepherds-chief-mourner",
+    "title": "The Old Shepherd's Chief Mourner",
+    "artist": "Edwin Landseer",
+    "image": "/artworks/Landseer_Edwin-Old_Shepherds_Chief_Mourner_1837.jpg",
     "x": 4.5342,
     "y": 2.8984
   },
   {
     "slug": "charles_joseph_grips_-_a_woman_at_a_loom_1879",
+    "title": "Charles_joseph_grips_ _a_woman_at_a_loom_1879",
+    "artist": "",
+    "image": "/artworks/charles_joseph_grips_-_a_woman_at_a_loom_1879.webp",
     "x": 4.0627,
     "y": 2.3303
   },
   {
     "slug": "michael-dargas-woman-honey-portrait",
+    "title": "Michael Dargas Woman Honey Portrait",
+    "artist": "",
+    "image": "/artworks/michael-dargas-woman-honey-portrait.jpg",
     "x": -0.1012,
     "y": 2.3402
   },
   {
     "slug": "Charles_Joseph_Grips_-_Waiting_for_a_Loved_One_,_1894",
+    "title": "Charles_Joseph_Grips_ _Waiting_for_a_Loved_One_,_1894",
+    "artist": "",
+    "image": "/artworks/Charles_Joseph_Grips_-_Waiting_for_a_Loved_One_,_1894.jpg",
     "x": 3.7932,
     "y": 2.0669
   },
   {
     "slug": "Tomas_Sanchez_Desde_la_cueva_del_corazon_2004_acrilico_sobre_tela_46_x_60_3_cm_89709d2acb",
+    "title": "Tomas_Sanchez_Desde_la_cueva_del_corazon_2004_acrilico_sobre_tela_46_x_60_3_cm_89709d2acb",
+    "artist": "",
+    "image": "/artworks/Tomas_Sanchez_Desde_la_cueva_del_corazon_2004_acrilico_sobre_tela_46_x_60_3_cm_89709d2acb.jpg",
     "x": -0.9587,
     "y": 1.0392
   },
   {
     "slug": "briton-riviere-requiscat",
+    "title": "Briton Riviere Requiscat",
+    "artist": "",
+    "image": "/artworks/briton-riviere-requiscat.jpg",
     "x": 4.567,
     "y": 3.2487
   },
   {
     "slug": "ivan-the-terrible-and-his-son",
+    "title": "Ivan the Terrible and His Son Ivan",
+    "artist": "Ilya Repin",
+    "image": "/artworks/Iv\u00e1n_el_Terrible_y_su_hijo,_por_Ili\u00e1_Repin.jpg",
     "x": 3.9298,
     "y": 1.9974
   },
   {
     "slug": "thescream-munch",
+    "title": "Thescream Munch",
+    "artist": "",
+    "image": "/artworks/thescream-munch.jpeg",
     "x": -2.9958,
     "y": 0.371
   },
   {
     "slug": "great-wave-off-kanagawa",
+    "title": "The Great Wave off Kanagawa",
+    "artist": "Hokusai",
+    "image": "/artworks/thewave-hokusai.jpeg",
     "x": -1.5561,
     "y": 0.6162
   },
   {
     "slug": "briton-riviere-daniel-in-the-lions-den",
+    "title": "Briton Riviere Daniel In The Lions Den",
+    "artist": "",
+    "image": "/artworks/briton-riviere-daniel-in-the-lions-den.jpg",
     "x": 4.5297,
     "y": 4.853
   },
   {
     "slug": "Riviere_Briton_The_Long_Sleep",
+    "title": "Riviere_Briton_The_Long_Sleep",
+    "artist": "",
+    "image": "/artworks/Riviere_Briton_The_Long_Sleep.jpg",
     "x": 4.2495,
     "y": 3.0531
   },
   {
     "slug": "michael-dargas-foundation-of-elegance",
+    "title": "Michael Dargas Foundation Of Elegance",
+    "artist": "",
+    "image": "/artworks/michael-dargas-foundation-of-elegance.webp",
     "x": 0.1555,
     "y": 2.4942
   },
   {
     "slug": "unoreverse",
+    "title": "Unoreverse",
+    "artist": "",
+    "image": "/artworks/unoreverse.jpg",
     "x": 0.4753,
     "y": 2.3814
   },
   {
     "slug": "kiss-klimt",
+    "title": "Kiss Klimt",
+    "artist": "",
+    "image": "/artworks/kiss-klimt.jpg",
     "x": -3.2131,
     "y": 0.3944
   },
   {
     "slug": "Tomas_Sanchez_En_el_paisaje_interior_2010_acrilico_sobre_tela_60_3_x_45_cm_bd69b11fb7",
+    "title": "Tomas_Sanchez_En_el_paisaje_interior_2010_acrilico_sobre_tela_60_3_x_45_cm_bd69b11fb7",
+    "artist": "",
+    "image": "/artworks/Tomas_Sanchez_En_el_paisaje_interior_2010_acrilico_sobre_tela_60_3_x_45_cm_bd69b11fb7.jpg",
     "x": -1.1145,
     "y": 0.8126
   },
   {
     "slug": "Tomas_Sanchez_El_testigo_2000_oleo_sobre_tela_152_4_x_121_9_cm_866f815744",
+    "title": "Tomas_Sanchez_El_testigo_2000_oleo_sobre_tela_152_4_x_121_9_cm_866f815744",
+    "artist": "",
+    "image": "/artworks/Tomas_Sanchez_El_testigo_2000_oleo_sobre_tela_152_4_x_121_9_cm_866f815744.jpg",
     "x": -1.386,
     "y": 1.1504
   },
   {
     "slug": "Briton_Rivi\u00e8re_-_Una_and_the_Lion",
+    "title": "Briton_Rivi\u00e8re_ _Una_and_the_Lion",
+    "artist": "",
+    "image": "/artworks/Briton_Rivi\u00e8re_-_Una_and_the_Lion.jpg",
     "x": 4.3672,
     "y": 4.9887
   },
   {
     "slug": "briton-riviere-old-woman-lighting-tinder",
+    "title": "Briton Riviere Old Woman Lighting Tinder",
+    "artist": "",
+    "image": "/artworks/briton-riviere-old-woman-lighting-tinder.jpg",
     "x": 4.6482,
     "y": 2.6226
   },
   {
     "slug": "Nighthawks_by_Edward_Hopper_1942",
+    "title": "Nighthawks_by_Edward_Hopper_1942",
+    "artist": "",
+    "image": "/artworks/Nighthawks_by_Edward_Hopper_1942.jpg",
     "x": 1.8366,
     "y": 2.2407
   },
   {
     "slug": "carrying-love-across",
+    "title": "Carrying Love Across",
+    "artist": "Unknown",
+    "image": "/artworks/carryingloveacross.jpg",
     "x": -0.5138,
     "y": 1.1395
   },
   {
     "slug": "briton-riviere-apollo",
+    "title": "Briton Riviere Apollo",
+    "artist": "",
+    "image": "/artworks/briton-riviere-apollo.jpg",
     "x": 4.1912,
     "y": 4.5383
   },
   {
     "slug": "nunpiercing-joyceartwork",
+    "title": "Nunpiercing Joyceartwork",
+    "artist": "",
+    "image": "/artworks/nunpiercing-joyceartwork.jpg",
     "x": 0.5074,
     "y": 1.8659
   },
   {
     "slug": "Pieter_Bruegel_the_Elder_-_Childrens_Games_-_Google_Art_Project-1024x744",
+    "title": "Pieter_Bruegel_the_Elder_ _Childrens_Games_ _Google_Art_Project 1024x744",
+    "artist": "",
+    "image": "/artworks/Pieter_Bruegel_the_Elder_-_Childrens_Games_-_Google_Art_Project-1024x744.jpg",
     "x": 2.5969,
     "y": 2.6978
   },
   {
     "slug": "darial-gorge-1862.jpg!Large",
+    "title": "Darial Gorge 1862.jpg!Large",
+    "artist": "",
+    "image": "/artworks/darial-gorge-1862.jpg!Large.jpg",
     "x": 3.6438,
     "y": 3.9102
   },
   {
     "slug": "recliningtiredlady",
+    "title": "Recliningtiredlady",
+    "artist": "",
+    "image": "/artworks/recliningtiredlady.jpg",
     "x": 3.9104,
     "y": 1.5408
   },
   {
     "slug": "cheetah-hannah-jensonfox",
+    "title": "Cheetah Hannah Jensonfox",
+    "artist": "",
+    "image": "/artworks/cheetah-hannah-jensonfox.jpg",
     "x": -0.6017,
     "y": 2.7552
   },
   {
     "slug": "window",
+    "title": "Window",
+    "artist": "Diango Hernandez",
+    "image": "/artworks/window-diangohernandez.jpg",
     "x": -0.1557,
     "y": 1.6808
   },
   {
     "slug": "the-kiss-klimt",
+    "title": "The Kiss",
+    "artist": "Gustav Klimt",
+    "image": "/artworks/kiss-klimt.jpg",
     "x": -3.3596,
     "y": 0.2081
   },
   {
     "slug": "Isolation-leonard-koscianski",
+    "title": "Isolation Leonard Koscianski",
+    "artist": "",
+    "image": "/artworks/Isolation-leonard-koscianski.jpg",
     "x": -0.7195,
     "y": 0.6108
   },
   {
     "slug": "briton-riviere-old-playfellows",
+    "title": "Briton Riviere Old Playfellows",
+    "artist": "",
+    "image": "/artworks/briton-riviere-old-playfellows.jpg",
     "x": 3.9727,
     "y": 2.8314
   },
   {
     "slug": "kettlebell-lovisa",
+    "title": "Kettlebell Lovisa",
+    "artist": "",
+    "image": "/artworks/kettlebell-lovisa.jpg",
     "x": 0.7066,
     "y": 2.1365
   },
   {
     "slug": "Tomas_Sanchez_La_nube_2023_acrilico_sobre_tela_60_5_x_91_2_cm_45e23718d7",
+    "title": "Tomas_Sanchez_La_nube_2023_acrilico_sobre_tela_60_5_x_91_2_cm_45e23718d7",
+    "artist": "",
+    "image": "/artworks/Tomas_Sanchez_La_nube_2023_acrilico_sobre_tela_60_5_x_91_2_cm_45e23718d7.jpg",
     "x": -1.6268,
     "y": 1.3408
   },
   {
     "slug": "briton-riviere-sympathy",
+    "title": "Briton Riviere Sympathy",
+    "artist": "",
+    "image": "/artworks/briton-riviere-sympathy.jpg",
     "x": 3.763,
     "y": 2.9311
   },
   {
     "slug": "monte-carlo-masters",
+    "title": "Monte Carlo Masters",
+    "artist": "Unknown",
+    "image": "/artworks/montecarlomasters.jpg",
     "x": 1.9849,
     "y": 2.4725
   },
   {
     "slug": "una-and-the-lion-briton-riviere",
+    "title": "Una and the Lion",
+    "artist": "Briton Riviere",
+    "image": "/artworks/Briton_Rivie\u0300re_-_Una_and_the_Lion.jpg",
     "x": 4.4346,
     "y": 5.1223
   },
   {
     "slug": "Tomas_Sanchez_Con_la_puerta_abierta_2015_acrilico_y_oleo_sobre_tela_200_x_250_cm_1d4c5f1d7c",
+    "title": "Tomas_Sanchez_Con_la_puerta_abierta_2015_acrilico_y_oleo_sobre_tela_200_x_250_cm_1d4c5f1d7c",
+    "artist": "",
+    "image": "/artworks/Tomas_Sanchez_Con_la_puerta_abierta_2015_acrilico_y_oleo_sobre_tela_200_x_250_cm_1d4c5f1d7c.jpg",
     "x": 1.7585,
     "y": 2.5398
   },
   {
     "slug": "Tomas_Sanchez_River_and_cloud_2019_acrilico_sobre_tela_60_5_x_91_cm_d018c086c7",
+    "title": "Tomas_Sanchez_River_and_cloud_2019_acrilico_sobre_tela_60_5_x_91_cm_d018c086c7",
+    "artist": "",
+    "image": "/artworks/Tomas_Sanchez_River_and_cloud_2019_acrilico_sobre_tela_60_5_x_91_cm_d018c086c7.jpg",
     "x": -1.5774,
     "y": 1.1683
   },
   {
     "slug": "youth_making_a_face_1994.46.1-785x1024",
+    "title": "Youth_making_a_face_1994.46.1 785x1024",
+    "artist": "",
+    "image": "/artworks/youth_making_a_face_1994.46.1-785x1024.jpg",
     "x": 4.7754,
     "y": 2.766
   },
   {
     "slug": "Michael-dargas-portrait",
+    "title": "Michael Dargas Portrait",
+    "artist": "",
+    "image": "/artworks/Michael-dargas-portrait.webp",
     "x": -0.0197,
     "y": 2.4249
   },
   {
     "slug": "briton-riviere-aphrodite",
+    "title": "Briton Riviere Aphrodite",
+    "artist": "",
+    "image": "/artworks/briton-riviere-aphrodite.jpeg",
     "x": 4.142,
     "y": 5.1426
   },
   {
     "slug": "thewave-hokusai",
+    "title": "Thewave Hokusai",
+    "artist": "",
+    "image": "/artworks/thewave-hokusai.jpeg",
     "x": -1.4861,
     "y": 0.4507
   },
   {
     "slug": "cloudscape",
+    "title": "Cloudscape",
+    "artist": "Ignasi",
+    "image": "/artworks/ignasi-cloudscape.jpg",
     "x": -1.5812,
     "y": 1.694
   },
   {
     "slug": "Tomas_Sanchez_Inner_love_2020_acrilico_sobre_tela_100_x_80_cm_6de5a4811e",
+    "title": "Tomas_Sanchez_Inner_love_2020_acrilico_sobre_tela_100_x_80_cm_6de5a4811e",
+    "artist": "",
+    "image": "/artworks/Tomas_Sanchez_Inner_love_2020_acrilico_sobre_tela_100_x_80_cm_6de5a4811e.jpg",
     "x": -1.2628,
     "y": 1.4156
   },
   {
     "slug": "Jean-L\u00e9on_G\u00e9r\u00f4me_-_The_Carpet_Merchant_-_Google_Art_Project",
+    "title": "Jean L\u00e9on_G\u00e9r\u00f4me_ _The_Carpet_Merchant_ _Google_Art_Project",
+    "artist": "",
+    "image": "/artworks/Jean-L\u00e9on_G\u00e9r\u00f4me_-_The_Carpet_Merchant_-_Google_Art_Project.jpg",
     "x": 3.5549,
     "y": 1.9862
   },
   {
     "slug": "briton-riviere-daniels-answer-to-the-kind",
+    "title": "Briton Riviere Daniels Answer To The Kind",
+    "artist": "",
+    "image": "/artworks/briton-riviere-daniels-answer-to-the-kind.jpg",
     "x": 4.1409,
     "y": 4.8653
   },
   {
     "slug": "michael-dargas-blooming-within",
+    "title": "Michael Dargas Blooming Within",
+    "artist": "",
+    "image": "/artworks/michael-dargas-blooming-within.webp",
     "x": -0.1915,
     "y": 2.0054
   },
   {
     "slug": "muslim-lady",
+    "title": "Muslim Lady",
+    "artist": "Renaldi",
+    "image": "/artworks/muslimlady-renaldi.jpg",
     "x": 3.8471,
     "y": 1.4032
   },
   {
     "slug": "window-diangohernandez",
+    "title": "Window Diangohernandez",
+    "artist": "",
+    "image": "/artworks/window-diangohernandez.jpg",
     "x": 0.0142,
     "y": 1.5332
   },
   {
     "slug": "muslimlady-renaldi",
+    "title": "Muslimlady Renaldi",
+    "artist": "",
+    "image": "/artworks/muslimlady-renaldi.jpg",
     "x": 3.9184,
     "y": 1.4315
   },
   {
     "slug": "slipperanddogs_frenchcanvasstudio",
+    "title": "Slipperanddogs_frenchcanvasstudio",
+    "artist": "",
+    "image": "/artworks/slipperanddogs_frenchcanvasstudio.jpg",
     "x": 3.4863,
     "y": 2.9414
   },
   {
     "slug": "the-scream",
+    "title": "The Scream",
+    "artist": "Edvard Munch",
+    "image": "/artworks/thescream-munch.jpeg",
     "x": -2.9928,
     "y": 0.56
   },
   {
     "slug": "mcescher-day-and-night",
+    "title": "Mcescher Day And Night",
+    "artist": "",
+    "image": "/artworks/mcescher-day-and-night.jpeg",
     "x": -0.3727,
     "y": 1.3628
   },
   {
     "slug": "starrynightoverrhone-vangogh",
+    "title": "Starrynightoverrhone Vangogh",
+    "artist": "",
+    "image": "/artworks/starrynightoverrhone-vangogh.jpg",
     "x": -3.1235,
     "y": 0.534
   },
   {
     "slug": "briton-riviere-all-that-was-left-of-the-homeward-bound",
+    "title": "Briton Riviere All That Was Left Of The Homeward Bound",
+    "artist": "",
+    "image": "/artworks/briton-riviere-all-that-was-left-of-the-homeward-bound.jpg",
     "x": 3.582,
     "y": 4.1986
   },
   {
     "slug": "flowers-fruit-and-fatality-rachel-ruysch",
+    "title": "Flowers Fruit And Fatality Rachel Ruysch",
+    "artist": "",
+    "image": "/artworks/flowers-fruit-and-fatality-rachel-ruysch.jpg",
     "x": 3.0903,
     "y": 1.8173
   },
   {
     "slug": "darial-gorge",
+    "title": "The Darial Gorge",
+    "artist": "Arkhip Kuindzhi",
+    "image": "/artworks/darial-gorge-1862.jpg!Large.jpg",
     "x": 3.519,
     "y": 3.8287
   },
   {
     "slug": "pinkdress-lovisa",
+    "title": "Pinkdress Lovisa",
+    "artist": "",
+    "image": "/artworks/pinkdress-lovisa.jpg",
     "x": 0.5946,
     "y": 1.9468
   },
   {
     "slug": "Pieter_Bruegel_the_Elder_-_Childrens_Games_-_Google_Art_Project-scaled-1-e1649940441532",
+    "title": "Pieter_Bruegel_the_Elder_ _Childrens_Games_ _Google_Art_Project Scaled 1 E1649940441532",
+    "artist": "",
+    "image": "/artworks/Pieter_Bruegel_the_Elder_-_Childrens_Games_-_Google_Art_Project-scaled-1-e1649940441532.jpg",
     "x": 3.0464,
     "y": 2.8861
   }

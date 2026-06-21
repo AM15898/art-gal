@@ -52,13 +52,44 @@ def main():
     result = []
 
     for slug, point in zip(slugs, coordinates):
+        metadata_path = (
+            ARTWORKS_DIR
+            / slug
+            / "metadata.json"
+        )
+
+        title = slug
+        artist = ""
+        image = ""
+
+        if metadata_path.exists():
+            with open(metadata_path) as f:
+                metadata = json.load(f)
+
+            title = metadata.get(
+                "title",
+                slug,
+            )
+
+            artist = metadata.get(
+                "artist",
+                "",
+            )
+
+            image = metadata.get(
+                "image",
+                "",
+            )
+
         result.append(
             {
                 "slug": slug,
+                "title": title,
+                "artist": artist,
+                "image": image,
                 "x": round(float(point[0]), 4),
                 "y": round(float(point[1]), 4),
-            }
-        )
+            })
 
     OUTPUT_DIR.mkdir(
         parents=True,

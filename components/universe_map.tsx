@@ -1,11 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 
 type Point = {
   slug: string;
   x: number;
   y: number;
+  title?: string;
+  artist?: string;
+  image?: string;
 };
 
 export default function UniverseMap({
@@ -13,6 +17,9 @@ export default function UniverseMap({
 }: {
   points: Point[];
 }) {
+
+  const [hovered, setHovered] = useState<Point | null>(null);
+
   const width = 1200;
   const height = 800;
 
@@ -33,6 +40,41 @@ export default function UniverseMap({
 
   return (
     <div className="overflow-auto border rounded-lg">
+      {hovered && (
+        <div
+            className="
+            fixed
+            top-4
+            left-4
+            bg-black
+            text-white
+            p-3
+            rounded
+            z-50
+            shadow-lg
+            "
+        >
+            <div className="font-bold">
+            {hovered.title ?? hovered.slug}
+            </div>
+
+            <div className="text-sm opacity-75">
+            {hovered.artist}
+
+            <img
+                src={hovered.image}
+                alt={hovered.title}
+                className="
+                    w-32
+                    h-32
+                    object-cover
+                    rounded
+                    mb-2
+                "
+                />
+            </div>
+        </div>
+        )}
       <svg
         width={width}
         height={height}
@@ -46,6 +88,15 @@ export default function UniverseMap({
               cx={normalizeX(point.x)}
               cy={normalizeY(point.y)}
               r={4}
+              fill="#60A5FA"
+              stroke="#60A5FA"
+              strokeWidth={1}
+              
+              onMouseEnter={() =>
+                setHovered(point)}
+
+              onMouseLeave={() =>
+                setHovered(null)}
             >
               <title>
                 {point.slug}
