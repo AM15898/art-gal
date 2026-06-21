@@ -100,12 +100,17 @@ export function getArtworkRecord(
 
 export async function getArtworksBySlugs(
   slugs: string[]
-) {
+): Promise<Artwork[]> {
   const artworks = await getAllArtworks();
 
   return slugs
     .map((slug) =>
-      artworks.find((a) => a.slug === slug)
+      artworks.find(
+        (artwork) => artwork.slug === slug
+      )
     )
-    .filter(Boolean);
+    .filter(
+      (artwork): artwork is Artwork =>
+        artwork !== undefined
+    );
 }

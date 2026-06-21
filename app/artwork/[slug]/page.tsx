@@ -4,6 +4,15 @@ import { getArtworkBySlug } from "@/src/lib/artwork-service";
 import BackButton from "@/components/back-button";
 import Link from "next/link";
 import ColorSpectrum from "@/components/ColorSpectrum";
+import SimilarArtworks from "@/components/similar_artworks";
+
+import {
+  getSimilarArtworkSlugs,
+} from "@/src/lib/similarity-service";
+
+import {
+  getArtworksBySlugs,
+} from "@/src/lib/artwork-service";
 
 export default async function ArtworkPage({
   params,
@@ -13,6 +22,16 @@ export default async function ArtworkPage({
   const { slug } = await params;
 
   const artwork = await getArtworkBySlug(slug);
+
+  const similarResults =
+    getSimilarArtworkSlugs(slug);
+
+  const similarArtworks =
+    await getArtworksBySlugs(
+      similarResults.map(
+        (result) => result.slug
+      )
+    );
 
   if (!artwork) {
     notFound();
@@ -55,6 +74,8 @@ export default async function ArtworkPage({
     </h2>
 
     <ColorSpectrum palette={artwork.genome.palette} />
+    
+    <SimilarArtworks artworks={similarArtworks}/>
 
       <div className="mt-4 space-y-2 text-zinc-300">
 
